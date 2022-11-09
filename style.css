@@ -54,6 +54,18 @@ html {
 .layer-1 {
     background-image: url('./img/layer_3.png');
 }
+
+.layer-1::before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 0;
+    width: 4%;
+    height: 100%;
+    background: linear-gradient(to left,#333, transparent);
+    z-index: 100;
+}
+
 .layer-2 {
     background-image: url('./img/layer_2.png');
 }
